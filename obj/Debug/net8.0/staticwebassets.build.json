@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "o+49XJHxDzMlXdFEShKjYpKpDUB3fSk6Czh9FujMYB4=",
+  "Source": "ApiUsers",
+  "BasePath": "_content/ApiUsers",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

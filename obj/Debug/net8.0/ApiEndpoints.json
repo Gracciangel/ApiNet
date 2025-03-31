@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "ApiModular.Controller.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "User/CreateUser/user/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "MDL.Dto.CreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiModular.Controller.UserController",
+    "Method": "InicisarSesion",
+    "RelativePath": "User/InicisarSesion/user/inicio_sesion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiModular.Controller.UserController",
+    "Method": "Get",
+    "RelativePath": "Users/All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
