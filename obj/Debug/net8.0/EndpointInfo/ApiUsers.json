@@ -5,6 +5,46 @@
     "version": "1.0"
   },
   "paths": {
+    "/card": {
+      "post": {
+        "tags": [
+          "ControllerCard"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddCardDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddCardDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddCardDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Users/All": {
       "get": {
         "tags": [
@@ -72,6 +112,36 @@
   },
   "components": {
     "schemas": {
+      "AddCardDTO": {
+        "type": "object",
+        "properties": {
+          "usuario_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "card_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "card_number": {
+            "type": "string",
+            "nullable": true
+          },
+          "vencimiento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cvc": {
+            "type": "string",
+            "nullable": true
+          },
+          "titular": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateDto": {
         "type": "object",
         "properties": {

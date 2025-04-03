@@ -1,6 +1,27 @@
 [
   {
-    "ContainingType": "ApiModular.Controller.UserController",
+    "ContainingType": "ApiUsers.Controller.ControllerCard.ControllerCard",
+    "Method": "AddCardController",
+    "RelativePath": "card",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "card",
+        "Type": "MDL.Dto.AddCardDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiUsers.Controller.ControllerUser.UserController",
     "Method": "CreateUser",
     "RelativePath": "User/CreateUser/user/create",
     "HttpMethod": "POST",
@@ -16,7 +37,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ApiModular.Controller.UserController",
+    "ContainingType": "ApiUsers.Controller.ControllerUser.UserController",
     "Method": "InicisarSesion",
     "RelativePath": "User/InicisarSesion/user/inicio_sesion",
     "HttpMethod": "POST",
@@ -32,7 +53,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ApiModular.Controller.UserController",
+    "ContainingType": "ApiUsers.Controller.ControllerUser.UserController",
     "Method": "Get",
     "RelativePath": "Users/All",
     "HttpMethod": "GET",

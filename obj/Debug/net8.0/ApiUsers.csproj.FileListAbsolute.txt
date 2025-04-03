@@ -177,3 +177,4 @@ C:\Users\angel\source\repos\ApiModular\ApiUsers\obj\Debug\net8.0\ApiUsers.pdb
 C:\Users\angel\source\repos\ApiModular\ApiUsers\obj\Debug\net8.0\ApiUsers.genruntimeconfig.cache
 C:\Users\angel\source\repos\ApiModular\ApiUsers\obj\Debug\net8.0\ref\ApiUsers.dll
 C:\Users\angel\source\repos\ApiModular\ApiUsers\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\angel\source\repos\ApiModular\ApiUsers\obj\Debug\net8.0\ApiUsers.sourcelink.json

@@ -1,6 +1,8 @@
 using DAL.Contexto;
-using DAL.Interfaces;
-using DAL.Services;
+using DAL.Interfaces.Cards;
+using DAL.Interfaces.Usuarios;
+using DAL.Services.CardServices;
+using DAL.Services.UserServices;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +12,9 @@ builder.Services.AddDbContext<ContextDB>(
     context => context.UseSqlServer(contection));
 
 builder.Services.AddScoped<IUsers, UserServices>(); 
+builder.Services.AddScoped<ICard, CardServices>();  
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

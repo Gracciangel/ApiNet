@@ -1,15 +1,15 @@
-﻿using DAL.Interfaces;
+﻿using DAL.Interfaces.Usuarios;
 using MDL.Dto;
 using MDL.Users;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiModular.Controller
+namespace ApiUsers.Controller.ControllerUser
 {
     [ApiController]
     [Route("/[controller]/[action]")]
     public class UserController : ControllerBase
     {
-        DAL.Interfaces.IUsers _users;
+        IUsers _users;
         public UserController(IUsers users)
         {
             _users = users;
@@ -29,7 +29,8 @@ namespace ApiModular.Controller
                 {
                     return Ok(result);
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -52,7 +53,7 @@ namespace ApiModular.Controller
         }
 
         [HttpPost("user/inicio_sesion")]
-        public async Task<ActionResult> InicisarSesion( string data)
+        public async Task<ActionResult> InicisarSesion(string data)
         {
             var response = await _users.SesionInit(data);
             try
